@@ -8,6 +8,9 @@ public class PaymentCalculator {
 
     //declare constructor
     PaymentCalculator(double balance, double apr, double monthlyPayment) {
+        this.balance = balance;
+        this.apr = apr;
+        this.monthlyPayment = monthlyPayment;
     }
 
     //declare instance methods
