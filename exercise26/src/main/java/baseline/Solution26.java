@@ -43,10 +43,13 @@ public class Solution26 {
 
         //declare constructor with inputs
         PaymentCalculator person1 = new PaymentCalculator(balance, apr, monthlyPayment);
+
         //declare int months and set equal to method
-        int months;
+        int months = person1.calculateMonthsUntilPaidOff();
 
         //print results
+        System.out.println("It will take you " + months + " months to pay off this card.");
+
     }
 
     //display directions
