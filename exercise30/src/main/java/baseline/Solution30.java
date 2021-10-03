@@ -16,14 +16,27 @@ public class Solution30 {
     public static void main(String[] args) {
         Solution30 app = new Solution30();
 //        loop 1 through 12 and print a row for each number as the multiplier
+        for (int i = 1; i <= 12; i++) {
+            System.out.println(app.getRowString(i));
+        }
     }
 
-    public void printRowString(int multiplier) {
+    public String getRowString(int multiplier) {
 //        declare empty row string
         String rowString = "";
 //        loop 1 through 12
-
+        for (int i = 1; i <= 12; i++) {
 //        concatenate the product each number and the multiplier to the string
-//        print the row string
+            int product = i * multiplier;
+            if (product >= 100)
+                rowString += "  ";
+            else if (product >= 10)
+                rowString += "   ";
+            else
+                rowString += "    ";
+            rowString += product;
+        }
+//        return the row string
+        return rowString;
     }
 }
