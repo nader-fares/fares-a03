@@ -14,6 +14,8 @@ During the game, count non-numeric entries as wrong guesses.
 
 package baseline;
 
+import java.util.Locale;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Solution32 {
@@ -25,11 +27,51 @@ public class Solution32 {
     public static void main(String[] args) {
         Solution32 app = new Solution32();
 //        create a variable to store number of guesses
+        int guessCount = 0;
+        String lastGuessResult = "none"; // none | high | low | correct
 //        prompt user for difficulty
+        System.out.print("Enter the difficulty level (1, 2, or 3): ");
+        int difficulty;
+        if (input.hasNextInt()) {
+            difficulty = input.nextInt();
+        } else {
+            difficulty = 1;
+            input.next();
+        }
+
 //        determine number range
 //        generate a random number
+        app.generateRandomNumber(difficulty);
 //        loop to prompt user for guesses
+        do {
+            String promptMessage;
+            switch(lastGuessResult) {
+                case "high":
+                    promptMessage = "Too high, guess again: ";
+                    break;
+                case "low":
+                    promptMessage = "Too low, guess again: ";
+                    break;
+                default:
+                    promptMessage = "I have my number, what's your guess? ";
+            }
+            int guess = app.promptNumber(promptMessage);
+            guessCount++;
+            if (guess == app.getRandomNumber()) {
+                lastGuessResult = "correct";
+            } else if (guess > app.getRandomNumber()) {
+                lastGuessResult = "high";
+            } else if (guess < app.getRandomNumber()) {
+                lastGuessResult = "low";
+            }
+
+        } while (lastGuessResult != "correct");
 //        if correct guess, break loop and notify user
+        System.out.print("You got it in " + guessCount + " guesses.\nDo you wish to play again (Y/N)? ");
+        String playAgainInput = input.nextLine();
+        if (playAgainInput.toLowerCase(Locale.ROOT).equals("y")) {
+            main(args);
+        }
     }
 
     public void generateRandomNumber(int difficulty) {
@@ -57,6 +99,27 @@ public class Solution32 {
 
     public int promptNumber(String promptMessage) {
 //        prompt user for number
+        System.out.print(promptMessage);
+        int userInput;
+        try {
+            if (input.hasNextInt()) {
+                userInput = input.nextInt();
+                input.nextLine();
+            }
+            else {
+                input.next();
+                userInput = 0;
+            }
+
+        } catch(NoSuchElementException error) {
+            return 0;
+        }
+
 //        if invalid, return 0 (always incorrect)
+        return userInput;
+    }
+
+    public int getRandomNumber() {
+        return randomNumber;
     }
 }
