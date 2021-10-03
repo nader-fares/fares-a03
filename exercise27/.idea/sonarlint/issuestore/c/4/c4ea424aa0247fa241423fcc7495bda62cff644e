@@ -1,0 +1,18 @@
+
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(¬†Íè
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Äôè±
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(ú∫µU
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(—ﬁèΩ˚ˇˇˇˇ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(¢‡Ûƒ
+\
+java:S1126Q"AReplace this if-then-else statement by a single return statement.(€ö·ﬁ˘ˇˇˇˇ
+W
+java:S1126["AReplace this if-then-else statement by a single return statement.(˘öˆï
+W
+java:S1126e"AReplace this if-then-else statement by a single return statement.(Ÿ÷Û€
+T
+java:S1854q">Remove this useless assignment to local variable "zipCodeInt".(‰Ê®Ñ
+E
+java:S1481q"/Remove this unused "zipCodeInt" local variable.(‰Ê®Ñ
+R
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(›ßê1
