@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.Solution28Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-03T19:37:22" hostname="DESKTOP-M03T9RH" time="0.049">
+  <properties/>
+  <testcase name="promptNumber()" classname="baseline.Solution28Test" time="0.041"/>
+  <testcase name="addToTotal()" classname="baseline.Solution28Test" time="0.002"/>
+  <testcase name="getTotal()" classname="baseline.Solution28Test" time="0.001"/>
+  <system-out><![CDATA[Enter a number: ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
