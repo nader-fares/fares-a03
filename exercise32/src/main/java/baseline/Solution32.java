@@ -29,14 +29,30 @@ public class Solution32 {
 //        determine number range
 //        generate a random number
 //        loop to prompt user for guesses
+//        if correct guess, break loop and notify user
     }
 
     public void generateRandomNumber(int difficulty) {
 //        declare max int
         int max;
 //        choose max int based on difficulty
-//        change random number var
+        switch (difficulty) {
+            case 1:
+                max = 10;
+                break;
+            case 2:
+                max = 100;
+                break;
+            case 3:
+                max = 1000;
+                break;
+            default:
+                System.out.println("Invalid difficulty.");
+                return;
 
+        }
+//        change random number var
+        this.randomNumber = (int) Math.ceil(Math.random() * max);
     }
 
     public int promptNumber(String promptMessage) {
