@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.Solution27Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-10-03T18:54:19" hostname="DESKTOP-M03T9RH" time="0.041">
+  <properties/>
+  <testcase name="validateEmployeeID()" classname="baseline.Solution27Test" time="0.032"/>
+  <testcase name="validateInput()" classname="baseline.Solution27Test" time="0.002"/>
+  <testcase name="validateZipCode()" classname="baseline.Solution27Test" time="0.001"/>
+  <testcase name="validateNotEmpty()" classname="baseline.Solution27Test" time="0.001"/>
+  <testcase name="validateName()" classname="baseline.Solution27Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
