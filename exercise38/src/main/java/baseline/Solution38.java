@@ -13,19 +13,45 @@ Use a function called filterEvenNumbers to encapsulate the logic for this. The f
 
 package baseline;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Solution38 {
+    private static final Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
+        Solution38 app = new Solution38();
 //        ask user for number string
+        System.out.print("Enter a list of numbers, separated by spaces: ");
+        String numberStr = input.nextLine();
 //        convert string to array and filter
+        ArrayList<String> arr = app.stringToArray(numberStr);
+        ArrayList<String> newArr = new ArrayList<String>();
+        for (int i = 0; i < arr.size(); i++) {
+            if (Integer.parseInt(arr.get(i)) % 2 == 0)
+                newArr.add(arr.get(i));
+        }
 //        convert new array to string
+        String newStr = app.arrayToString(newArr);
 //        return new string
+        System.out.println("The even numbers are " + newStr + ".");
     }
 
-    public String[] stringToArray(String str) {
+    public ArrayList<String> stringToArray(String str) {
+        ArrayList<String> arrayList = new ArrayList<String>();
 //        split the string by the space character
+        arrayList.addAll(List.of(str.split(" ")));
+        return arrayList;
     }
 
-    public String arrayToString(String[] arr) {
+    public String arrayToString(ArrayList<String> arr) {
 //        create an array from the string
+        String str = "";
+        for (int i = 0; i < arr.size(); i++) {
+            if (i > 0)
+                str += " ";
+            str += arr.get(i);
+        }
+        return str;
     }
 }
