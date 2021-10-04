@@ -78,12 +78,13 @@ public class Solution40 {
     public void filterArray(String userInput) {
         // filter array by user input
         // check if first name or last name contain the input
-
+        ArrayList<Map<String, String>> newEmployees = new ArrayList<Map<String, String>>();
         for (int i = 0; i < employees.size(); i++) {
-            if (employees.get(i).get("First Name").contains(userInput) || employees.get(i).get("First Name").contains(userInput)) {
-
+            if (employees.get(i).get("First Name").contains(userInput) || employees.get(i).get("Last Name").contains(userInput)) {
+                newEmployees.add(employees.get(i));
             }
         }
+        employees = newEmployees;
     }
 
     public String getRowString(Map<String, String> employee) {
