@@ -20,7 +20,9 @@ package baseline;
 
 public class Solution36 {
     public static void main(String[] args) {
-//      loop
+//        create done variable
+//        loop millisecond prompts until user enters "done"
+//        print all calculations
     }
 
     public String promptMilliseconds() {
