@@ -24,14 +24,29 @@ public class Solution35 {
     public ArrayList<String> names = new ArrayList<String>();
 
     public static void main(String[] args) {
+        Solution35 app = new Solution35();
 //        create variable to notify when names are done being entered
+        boolean isDone = false;
 //        loop until isDone is true
+        while (!isDone) {
 //        in each iteration, prompt for a name and insert into array
+            System.out.print("Enter a name: ");
+            String userInput = input.nextLine();
+            if (userInput.length() > 0) {
+                app.addName(userInput);
+            } else {
 //        if input is blank, break loop
+                isDone = true;
+            }
+        }
+        int winnerIndex = (int) Math.floor(Math.random() * app.names.size());
+        String winner = app.names.get(winnerIndex);
+        System.out.println("The winner is... " + winner + ".");
 //        randomly select winner and print
     }
 
     public void addName(String name) {
 //        add name to list
+        names.add(name);
     }
 }
