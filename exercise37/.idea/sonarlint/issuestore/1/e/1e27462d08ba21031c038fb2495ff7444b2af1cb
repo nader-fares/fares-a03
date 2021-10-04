@@ -1,0 +1,52 @@
+
+8
+java:S2386	"Make this member "protected".(´Š¢–ûÿÿÿÿ
+8
+java:S2386
+"Make this member "protected".(©ëÎ‚úÿÿÿÿ
+8
+java:S2386"Make this member "protected".(İ­ïşüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²Åß
+S	java:S106"9Replace this use of System.out or System.err by a logger.(·ƒ³§ÿÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(Ûşö­
+U	java:S106("9Replace this use of System.out or System.err by a logger.(Ğ”ÿÅ8´§èÈÄ/
+P
+java:S1117.":Rename "letters" which hides the field declared at line 9.(•¶õ
+D
+java:S2140?")Use "java.util.Random.nextInt()" instead.(Œı–ÿüÿÿÿÿ
+t
+java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(´Š¢–ûÿÿÿÿ
+t
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(©ëÎ‚úÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(İ­ïşüÿÿÿÿ
+‚
+java:S1319	"gThe type of "letters" should be an interface such as "List" rather than the implementation "ArrayList".(´Š¢–ûÿÿÿÿ
+‚
+java:S1319
+"gThe type of "numbers" should be an interface such as "List" rather than the implementation "ArrayList".(©ëÎ‚úÿÿÿÿ
+ƒ
+java:S1319"hThe type of "specials" should be an interface such as "List" rather than the implementation "ArrayList".(İ­ïşüÿÿÿÿ
+}
+java:S1319="gThe type of "arrList" should be an interface such as "List" rather than the implementation "ArrayList".(ôí«
+1
+java:S16432"Use a StringBuilder instead.(®ó³x
+9
+java:S16434"Use a StringBuilder instead.(ƒÒÚĞ8´¢âÈÄ/
+9
+java:S16436"Use a StringBuilder instead.(²Ë‡û8µ¢âÈÄ/
+n
+java:S1104	"SMake letters a static final constant or non-public and provide accessors if needed.(´Š¢–ûÿÿÿÿ
+n
+java:S1104
+"SMake numbers a static final constant or non-public and provide accessors if needed.(©ëÎ‚úÿÿÿÿ
+o
+java:S1104"TMake specials a static final constant or non-public and provide accessors if needed.(İ­ïşüÿÿÿÿ
+H
+java:S1444	"-Make this "public static letters" field final(´Š¢–ûÿÿÿÿ
+H
+java:S1444
+"-Make this "public static numbers" field final(©ëÎ‚úÿÿÿÿ
+I
+java:S1444".Make this "public static specials" field final(İ­ïşüÿÿÿÿ
