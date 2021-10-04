@@ -1,3 +1,14 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Nader Fares
+ */
+
+/*
+Given the following data set, create a program that sorts all employees by last name and prints them to the screen in a tabular format.
+Constraint
+Store the data using a list of maps.
+ */
+
 package baseline;
 
 import org.junit.jupiter.api.Test;
