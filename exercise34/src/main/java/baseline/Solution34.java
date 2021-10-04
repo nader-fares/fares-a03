@@ -35,4 +35,9 @@ public class Solution34 {
     public void removeEmployee(String name) {
 //        remove employee with given name
     }
+
+    public void printEmployees() {
+//        loop through list of employees and print them
+
+    }
 }
